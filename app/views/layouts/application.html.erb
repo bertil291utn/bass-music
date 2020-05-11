@@ -2,14 +2,57 @@
 <html>
   <head>
     <title>BassMusic</title>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="header">
+      <div class="container">
+        <img class="logo" src="http://s3.amazonaws.com/codecademy-content/projects/3/bass-music/logo.svg"/>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-2">
+          <h3>Bass</h3>
+          <ul>
+            <li><a href="#">Install</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <h3>About</h3>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <h3>Support</h3>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <h3>Community</h3>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Google+</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
