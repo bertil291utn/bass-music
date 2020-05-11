@@ -1,3 +1,3 @@
 class Track < ApplicationRecord
-  has_many :tracks
+  belongs_to :album
 end
