@@ -13,3 +13,136 @@
  *= require_tree .
  *= require_self
  */
+a:hover {
+  text-decoration: none;
+}
+
+a:hover .thumbnail img {
+  opacity: 0.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+}
+
+.logo {
+  width: 60px;
+  margin: 15px 0;
+}
+
+/* Main */
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  padding-top: 40px;
+  background-color: #1c1c1e;
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto 0;
+  vertical-align: bottom;
+}
+
+/* Thumbnail */
+.thumbnail {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  height: 350px;
+}
+
+.title,
+.artist {
+  color: #fff;
+  text-align: center;
+}
+
+.title,
+.album-title {
+  margin: 5px 0 3px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.artist,
+.album-artist {
+  color: #c3c3c3;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+/* Track */
+.show {
+  margin: 20px 0;
+}
+
+.album-title,
+.album-artist,
+.track .name,
+.track .minutes {
+  color: #fff;
+}
+
+.album-title {
+  font-size: 30px;
+}
+
+.album-artist {
+  margin-bottom: 25px;
+}
+
+.track {
+  margin-top: 10px;
+}
+
+.track:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.track .name {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.track .minutes {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.track:last-child {
+  margin-bottom: 80px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0 35px 0;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #aaa;
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px 0;
+}
