@@ -1,15 +1,13 @@
 <div class="show row">
-  <div class="cover col-md-4">  </div>
+  <div class="cover col-md-4">  <img src="<%= @album.cover %>">  </div>
   <div class="col-sm-8">
-    <h3 class="album-title">  </h3>
-    <p class="album-artist">  </p>
-    <!--
-    TODO: Loop through each track and display each one with this HTML
-    
-    <div class="track row">
-      <div class="name col-md-8">  </div>
-      <div class="minutes col-md-4">  min</div>
-    </div>
-    -->
+    <h3 class="album-title"><%=@album.title%>  </h3>
+    <p class="album-artist"> <%=@album.artist%>  </p>
+    <%@tracks.each do |track|%>
+      <div class="track row">
+        <div class="name col-md-8"><%=track.name%>   </div>
+        <div class="minutes col-md-4"><%=track.minutes%>   min</div>
+      </div>
+    <%end%>
   </div>
 </div>
