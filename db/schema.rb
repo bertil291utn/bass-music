@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_11_014700) do
+ActiveRecord::Schema.define(version: 2020_05_11_025214) do
 
   create_table "albums", force: :cascade do |t|
     t.string "cover"
